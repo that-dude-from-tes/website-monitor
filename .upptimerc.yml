@@ -1,24 +1,22 @@
-# Change 'owner' and 'repo' to your GitHub username and repository name
-owner: your-github-username
-repo: wedding-website-monitor
 
+owner: that-dude-from-tes
+repo: website-monitor
 sites:
   - name: EventCrafter Weddings
     url: https://weddingsbyeventcrafter.com/
-    # This checks for 200 OK. 502/404/500 will trigger a "Down" alert.
     expectedStatusCodes:
       - 200
-    # Optional: Customize the icon or interval if supported (default 5m)
+    # timeout in case the site is slow (avoiding false alarms)
+    maxResponseTime: 60000 
     icon: https://weddingsbyeventcrafter.com/favicon.ico
 
 status-website:
-  # This configures the status page
   cname: ""
-  baseUrl: /website-monitor
+  baseUrl: /website-monitor 
   theme: light
   name: Uptime Status
 
-# This cleans up the automated commit messages in your repo
+# This cleans up the logs
 commitMessages:
   readmeContent: ":pencil: Update Readme with current downtime stats"
   summaryJson: ":card_file_box: Update status summary data"
