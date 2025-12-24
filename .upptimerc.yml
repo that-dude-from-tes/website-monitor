@@ -1,22 +1,22 @@
-
 owner: that-dude-from-tes
 repo: website-monitor
+
 sites:
   - name: EventCrafter Weddings
     url: https://weddingsbyeventcrafter.com/
+    # If the site gives 502/500, it sends an alert
     expectedStatusCodes:
       - 200
-    # timeout in case the site is slow (avoiding false alarms)
-    maxResponseTime: 60000 
-    icon: https://weddingsbyeventcrafter.com/favicon.ico
+    # Increase timeout to 60s to prevent false alarms
+    maxResponseTime: 60000
 
 status-website:
   cname: ""
-  baseUrl: /website-monitor 
+  baseUrl: /website-monitor
   theme: light
   name: Uptime Status
 
-# This cleans up the logs
+# This config cleans up the log text in your repo
 commitMessages:
   readmeContent: ":pencil: Update Readme with current downtime stats"
   summaryJson: ":card_file_box: Update status summary data"
