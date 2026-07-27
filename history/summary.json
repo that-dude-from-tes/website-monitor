@@ -5,11 +5,11 @@
     "icon": "https://icons.duckduckgo.com/ip3/weddingsbyeventcrafter.com.ico",
     "slug": "event-crafter-weddings",
     "status": "down",
-    "uptime": "89.18%",
-    "uptimeDay": "59.88%",
-    "uptimeWeek": "94.27%",
-    "uptimeMonth": "98.68%",
-    "uptimeYear": "89.18%",
+    "uptime": "88.83%",
+    "uptimeDay": "14.34%",
+    "uptimeWeek": "82.03%",
+    "uptimeMonth": "95.87%",
+    "uptimeYear": "88.83%",
     "time": 0,
     "timeDay": 0,
     "timeWeek": 0,
@@ -74,7 +74,8 @@
       "2026-05-10": 32,
       "2026-05-28": 125,
       "2026-07-25": 501,
-      "2026-07-26": 77
+      "2026-07-26": 1230,
+      "2026-07-27": 81
     }
   }
 ]
